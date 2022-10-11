@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-          aws 서버 배포해보기
+          aws 서버 배포해보기 떠야하는데 안 떠
         </p>
         <a
           className="App-link"
