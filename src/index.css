@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'reset.css';
+
+
+
+/* 영화 앱 */
+.root-wrap {
+  position : absolute;
+  top : 0;
+  bottom : 0;
+  width: 100%;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* header 시작 */
+.header-container {
+  background-color: rgba(3, 37, 65, 1);
 }
+
+.header-wrap {
+  height: 64px;
+  max-width : 1400px;
+  margin : 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-left-wrap {
+  display: flex;
+}
+
+.header-left-wrap ul {
+  display: flex;
+  margin-left : 16px;
+}
+
+.header-left-wrap li {
+  margin-right: 14px;
+  padding: 8px;
+}
+
+.header-nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* header 끝 */
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+body {
+  /* background-color: #22254b; */
+  background-color: #fff;
+}
+
+.movies-container {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-container {
+  width : 250px;
+  margin : 16px;
+  background-color: #373b69;
+  color : white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-container img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display : flex;
+  padding : 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h4 {
+  margin : 0;
+}
+
+.movie-info span {
+  margin-left : 3px;
+}
+
+/* 로그인 시작 */
+
+.page {
+  position : absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-color: #F7F7F7;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrap {
+  margin-top : 87px;
+  font-size : 26px;
+  font-weight: 700;
+  color : #262626;
+}
+
+.contentWrap {
+  margin-top : 26px;
+  flex : 1;
+}
+
+.inputTitle {
+  font-size : 12px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.inputWrap {
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top:8px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+}
+
+.inputWrap:focus-within { 
+  border: 1px solid #9e30f4;
+}
+
+.input {
+  width: 100%;
+  outline : none;
+  border : none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: #dadada;
+}
+
+.errorMessageWrap {
+  margin-top : 8px;
+  color : #ef0000;
+  font-size: 12px;
+}
+
+.bottomButton {
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-weight: 700;
+  background-color: #9e30f4;
+  border-radius: 64px;
+  color: white;
+  margin-bottom : 16px;
+  cursor: pointer;
+}
+
+.bottomButton:disabled {
+  background-color: #dadada;
+  color: white;
+
+}
+
+/* 로그인 끝 */
