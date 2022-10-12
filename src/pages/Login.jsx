@@ -35,7 +35,7 @@ export default function Login() {
 
     const onClickConfirmButton = () => {
         if (email === User.email && pw === User.pw) {
-            alert('로그인 성공!');
+            document.location.href = "/movie";
         } else {
             alert('등록되지 않은 회원입니다.');
         }
@@ -44,11 +44,9 @@ export default function Login() {
     useEffect(() => {
         if (emailValid && pwValid) {
             setNotAllow(false);
-            console.log('false notAllow' + notAllow);
             return;
         }
         setNotAllow(true);
-        console.log('true notAllow' + notAllow);
     }, [emailValid, pwValid]);
 
     return (

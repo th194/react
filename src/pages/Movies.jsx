@@ -7,12 +7,14 @@ export default function Movies() {
         <div>
             <div className='movies-container'>
                 {
-                    dummy.results.map((item) => {
+                    dummy.results.map((item, i) => {
                         return (
                             <Movie
+                                key ={i}
                                 title={item.title}
                                 poster_path={item.poster_path}
                                 vote_average={item.vote_average}
+                                overview={item.overview}
                             />
                         )
                     })
